@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — DataHooks</title>
+  <meta name="description" content="Insights on data cleaning, unification, and building AI-ready infrastructure for your business." />
+    <link rel="canonical" href="https://datahooks.net/blog/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://datahooks.net/blog/" />
+  <meta property="og:title" content="DataHooks Blog" />
+  <meta property="og:description" content="Insights on data strategy, AI readiness, and building reliable data infrastructure for growing companies." />
+  <meta property="og:site_name" content="DataHooks" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="DataHooks Blog" />
+  <meta name="twitter:description" content="Insights on data strategy, AI readiness, and building reliable data infrastructure for growing companies." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <style>
+    /* Blog-specific styles */
+    .blog-category {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-glow);
+      padding: 0.35rem 0.75rem;
+      border-radius: 50px;
+      margin-bottom: 1rem;
+    }
+
+    .blog-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      transition: all var(--transition);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .blog-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    .blog-card h3 {
+      margin: 1rem 0 0.8rem 0;
+      font-size: 1.3rem;
+      line-height: 1.4;
+      color: var(--navy);
+    }
+
+    .blog-card p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .blog-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border-color);
+      gap: 1rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .blog-date {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .blog-readtime {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    @media (max-width: 1024px) {
+      .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .blog-meta {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="/" class="logo"><span class="logo-icon"><img src="/assets/logo-d-white.png" alt="DataHooks" /></span> DataHooks</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/solutions/">What We Do</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/" class="btn btn-primary" style="padding:0.6rem 1.4rem;">Let's Talk</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <section class="page-header">
+    <div class="container">
+      <span class="section-label">Blog</span>
+      <h1>Insights on data, infrastructure, and AI readiness</h1>
+      <p>Learn how leading companies are taking control of their data to fuel faster, more reliable AI initiatives.</p>
+    </div>
+  </section>
+
+  <!-- ===== BLOG POSTS ===== -->
+  <section>
+    <div class="container">
+      <div class="blog-grid fade-in">
+        <!-- Post 1 -->
+        <article class="blog-card">
+          <div class="blog-category">Data Quality</div>
+          <h3>Why Your AI Strategy Starts with Data Cleaning</h3>
+          <p>
+            Your AI models are only as good as the data feeding them. We break down why companies that prioritize data cleaning see 3x faster model performance and uncover insights their competitors miss.
+          </p>
+          <div class="blog-meta">
+            <span class="blog-date">
+              March 15, 2026
+            </span>
+            <span class="blog-readtime">5 min read</span>
+          </div>
+        </article>
+
+        <!-- Post 2 -->
+        <article class="blog-card">
+          <div class="blog-category">Infrastructure</div>
+          <h3>The True Cost of Renting Your Data Infrastructure</h3>
+          <p>
+            Per-row pricing models and vendor lock-in can silently drain your budget. We show you how to calculate the real cost of cloud data infrastructure and why data ownership matters more than ever.
+          </p>
+          <div class="blog-meta">
+            <span class="blog-date">
+              March 8, 2026
+            </span>
+            <span class="blog-readtime">7 min read</span>
+          </div>
+        </article>
+
+        <!-- Post 3 -->
+        <article class="blog-card">
+          <div class="blog-category">Data Strategy</div>
+          <h3>Data Unification: What It Actually Takes</h3>
+          <p>
+            Moving beyond scattered data silos requires more than just a database. Discover the real-world challenges of unifying data sources, the tools that work, and the common mistakes that derail projects.
+          </p>
+          <div class="blog-meta">
+            <span class="blog-date">
+              February 28, 2026
+            </span>
+            <span class="blog-readtime">6 min read</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA SECTION ===== -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Ready to take control of your data?</h2>
+        <p>Let's talk about how DataHooks can help you build the clean, unified data infrastructure your AI initiatives need to succeed.</p>
+        <a href="/contact/" class="btn btn-primary">Schedule a Conversation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo"><span class="logo-icon"><img src="/assets/logo-d-white.png" alt="DataHooks" /></span> DataHooks</a>
+          <p>We align your teams, fix your data, and make sure your dashboards, automations, and AI actually work.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="/solutions/">What We Do</a></li>
+            <li><a href="/solutions/#integrations">Data Sources</a></li>
+            <li><a href="/solutions/#process">Our Process</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 DataHooks. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobileToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

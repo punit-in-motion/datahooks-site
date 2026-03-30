@@ -3,11 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Let's Talk — Data Hooks</title>
-  <meta name="description" content="Talk to Data Hooks. We help companies clean, unify, and own their data — the right way." />
+  <title>Let's Talk — DataHooks</title>
+  <meta name="description" content="Talk to DataHooks. We align your teams, fix your data, and make sure your dashboards and AI actually work." />
+    <link rel="canonical" href="https://datahooks.net/contact/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://datahooks.net/contact/" />
+  <meta property="og:title" content="Contact DataHooks" />
+  <meta property="og:description" content="Tell us about your data challenges. We'll tell you exactly how we can help — no pressure, no pitch deck." />
+  <meta property="og:site_name" content="DataHooks" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Contact DataHooks" />
+  <meta name="twitter:description" content="Tell us about your data challenges. We'll tell you exactly how we can help — no pressure, no pitch deck." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/styles.css" />
   <style>
     .contact-layout {
       max-width: 640px;
@@ -90,12 +99,12 @@
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar">
     <div class="container">
-      <a href="index.html" class="logo"><span class="logo-icon"><img src="assets/logo-d-white.png" alt="Data Hooks" /></span> Data Hooks</a>
+      <a href="/" class="logo"><span class="logo-icon"><img src="/assets/logo-d-white.png" alt="DataHooks" /></span> DataHooks</a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="solutions.html">What We Do</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html" class="btn btn-primary active" style="padding:0.6rem 1.4rem;">Let's Talk</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/solutions/">What We Do</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/" class="btn btn-primary active" style="padding:0.6rem 1.4rem;">Let's Talk</a></li>
       </ul>
       <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -187,7 +196,7 @@
             <div class="checkmark">✓</div>
             <h2>We'll be in touch!</h2>
             <p style="color:var(--text-secondary); margin-top:0.8rem; font-size:1.05rem;">We've received your message and will be in touch within 24 hours to set up a call.</p>
-            <a href="index.html" class="btn btn-secondary" style="margin-top:2rem;">Back to Home</a>
+            <a href="/" class="btn btn-secondary" style="margin-top:2rem;">Back to Home</a>
           </div>
         </div>
       </div>
@@ -199,37 +208,35 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo"><span class="logo-icon"><img src="assets/logo-d-white.png" alt="Data Hooks" /></span> Data Hooks</a>
-          <p>We help companies clean, unify, and own their data — so their AI and automations actually work.</p>
+          <a href="/" class="logo"><span class="logo-icon"><img src="/assets/logo-d-white.png" alt="DataHooks" /></span> DataHooks</a>
+          <p>We align your teams, fix your data, and make sure your dashboards, automations, and AI actually work.</p>
         </div>
         <div>
           <h4>Services</h4>
           <ul class="footer-links">
-            <li><a href="solutions.html">What We Do</a></li>
-            <li><a href="solutions.html#integrations">Data Sources</a></li>
-            <li><a href="solutions.html#process">Our Process</a></li>
+            <li><a href="/solutions/">What We Do</a></li>
+            <li><a href="/solutions/#integrations">Data Sources</a></li>
+            <li><a href="/solutions/#process">Our Process</a></li>
           </ul>
         </div>
         <div>
           <h4>Company</h4>
           <ul class="footer-links">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/contact/">Contact</a></li>
           </ul>
         </div>
         <div>
           <h4>Legal</h4>
           <ul class="footer-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Security</a></li>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms of Service</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>&copy; 2026 Data Hooks. All rights reserved.</span>
-        <span>San Francisco, CA</span>
+        <span>&copy; 2026 DataHooks. All rights reserved.</span>
       </div>
     </div>
   </footer>
@@ -262,14 +269,14 @@
       };
 
       try {
+        const formData = new FormData();
+        Object.entries(data).forEach(([key, val]) => formData.append(key, val));
         await fetch(GOOGLE_SHEETS_URL, {
           method: 'POST',
-          mode: 'no-cors',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(data)
+          body: formData
         });
       } catch (err) {
-        // no-cors won't give us a readable response, but data still posts
+        // CORS error is expected but the data still posts successfully
       }
 
       document.getElementById('formContent').style.display = 'none';

@@ -3,25 +3,49 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data Hooks — We Make Your Data Great</title>
-  <meta name="description" content="Data Hooks helps companies clean, unify, and own their data. We're the data team you wish you had." />
+  <title>DataHooks — We Make Your Data Great</title>
+  <meta name="description" content="DataHooks is a data agency that aligns your teams, fixes your data, and builds the dashboards and automations your business actually needs." />
+    <link rel="canonical" href="https://datahooks.net/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://datahooks.net/" />
+  <meta property="og:title" content="DataHooks — Great AI Systems Need Great Data" />
+  <meta property="og:description" content="DataHooks aligns your teams, fixes your data, and builds the dashboards, automations, and AI tools your business needs. Your ongoing data partner." />
+  <meta property="og:site_name" content="DataHooks" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="DataHooks — Great AI Systems Need Great Data" />
+  <meta name="twitter:description" content="DataHooks aligns your teams, fixes your data, and builds the dashboards, automations, and AI tools your business needs. Your ongoing data partner." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "DataHooks",
+    "url": "https://datahooks.net",
+    "description": "DataHooks aligns your teams, fixes your data, and builds the dashboards, automations, and AI tools your business needs.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "url": "https://datahooks.net/contact/"
+    },
+    "sameAs": []
+  }
+  </script>
 </head>
 <body>
 
   <!-- ===== NAVBAR ===== -->
   <nav class="navbar">
     <div class="container">
-      <a href="index.html" class="logo">
-        <span class="logo-icon"><img src="assets/logo-d-white.png" alt="Data Hooks" /></span> Data Hooks
+      <a href="/" class="logo">
+        <span class="logo-icon"><img src="assets/logo-d-white.png" alt="DataHooks" /></span> DataHooks
       </a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="solutions.html">What We Do</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html" class="btn btn-primary" style="padding:0.6rem 1.4rem;">Let's Talk</a></li>
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="/solutions/">What We Do</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/contact/" class="btn btn-primary" style="padding:0.6rem 1.4rem;">Let's Talk</a></li>
       </ul>
       <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -42,8 +66,8 @@
         <h1>Great AI Systems Need <span class="gradient-text">Great Data</span></h1>
         <p>Whether you're automating, building product, running marketing, or closing deals — these systems all run on data. And right now, your data is a mess. We fix that.</p>
         <div class="hero-actions">
-          <a href="contact.html" class="btn btn-primary">Start a Conversation <span>→</span></a>
-          <a href="solutions.html" class="btn btn-secondary">How We Work</a>
+          <a href="/contact/" class="btn btn-primary">Start a Conversation <span>→</span></a>
+          <a href="/solutions/" class="btn btn-secondary">How We Work</a>
         </div>
       </div>
     </div>
@@ -54,48 +78,47 @@
     <div class="container">
       <div style="text-align:center; margin-bottom:4rem;">
         <span class="section-label">How We Help</span>
-        <h2>Clean it. Unify it. Own it.</h2>
-        <p class="section-subtitle">We work with your team in three phases — starting with the quick wins and building toward full data independence.</p>
+        <h2>Align your teams. Fix your data. Build what matters.</h2>
+        <p class="section-subtitle">Data problems aren't technical at their root — they're organizational. We sit between your teams, figure out what's actually wrong, and make it right.</p>
       </div>
 
-      <!-- Phase 1: Clean -->
+      <!-- Phase 1: Align -->
       <div class="value-prop-item fade-in">
         <div class="value-prop-text">
           <div class="value-prop-number">01</div>
-          <h3>We Clean Your Data</h3>
-          <p>This is where we start. Your CRM is full of duplicates. Your analytics have broken schemas. Your product database hasn't been normalized in years. We come in, audit what you have, and clean it up — deduplication, validation, normalization, the works. Thoroughly, methodically, and with your sign-off at every step.</p>
+          <h3>Your Teams Finally Agree on the Numbers</h3>
+          <p>Sales says 200 leads. Marketing says 340. Finance says neither number makes sense. Sound familiar? The problem isn't your CRM — it's that nobody agreed on what a "lead" means. We sit down with every team, map the disagreements, and create shared definitions that everyone trusts. Before we touch a single record.</p>
         </div>
         <div class="value-prop-visual">
           <div style="width:100%;">
-            <!-- Before -->
+            <!-- Before: disagreement -->
             <div style="background:rgba(231,76,60,0.04); border:1px solid rgba(231,76,60,0.12); border-radius:12px; padding:1.2rem; margin-bottom:0.8rem;">
               <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.1em; color:#e74c3c; margin-bottom:0.8rem; font-weight:600;">Before</div>
-              <div style="font-family:'Courier New',monospace; font-size:0.75rem; line-height:1.8; color:var(--navy);">
-                <div>John Smith &nbsp; john@acme.com</div>
-                <div>john smith &nbsp; j.smith@acme.com</div>
-                <div>JOHN SMITH &nbsp; john@acme.com</div>
-                <div style="color:#e74c3c; text-decoration:line-through; opacity:0.6;">Jon Smth &nbsp;&nbsp;&nbsp; NULL</div>
-                <div style="color:var(--text-muted);">… 12,847 more like this</div>
+              <div style="font-size:0.85rem; line-height:2; color:var(--navy);">
+                <div><strong>Sales:</strong> "We have 200 qualified leads"</div>
+                <div><strong>Marketing:</strong> "We generated 340 MQLs"</div>
+                <div><strong>Finance:</strong> "Pipeline shows $1.2M"</div>
+                <div style="color:#e74c3c; font-size:0.8rem; margin-top:0.3rem;">Three teams, three numbers, zero trust</div>
               </div>
             </div>
-            <!-- After -->
+            <!-- After: alignment -->
             <div style="background:rgba(0,184,148,0.04); border:1px solid rgba(0,184,148,0.15); border-radius:12px; padding:1.2rem;">
               <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.1em; color:#00b894; margin-bottom:0.8rem; font-weight:600;">After</div>
-              <div style="font-family:'Courier New',monospace; font-size:0.75rem; line-height:1.8; color:var(--navy);">
-                <div><span style="color:#00b894;">✓</span> John Smith &nbsp; john@acme.com &nbsp; <span style="color:var(--text-muted);">Acme Inc.</span></div>
-                <div style="color:var(--text-muted); font-size:0.7rem; margin-top:0.3rem;">3 duplicates merged · email verified · company matched</div>
+              <div style="font-size:0.85rem; line-height:1.8; color:var(--navy);">
+                <div><span style="color:#00b894;">✓</span> <strong>Shared definition:</strong> 247 qualified leads</div>
+                <div style="color:var(--text-muted); font-size:0.78rem; margin-top:0.3rem;">One number. Every team trusts it. Dashboards match.</div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Phase 2: Unify -->
+      <!-- Phase 2: Fix -->
       <div class="value-prop-item reverse fade-in">
         <div class="value-prop-text">
           <div class="value-prop-number">02</div>
-          <h3>We Unify Your Sources</h3>
-          <p>You have really interesting data. But right now it lives on five different platforms — your CRM, your product database, Google Analytics, ad platforms, third-party vendors. None of them talk to each other. We build the pipelines that bring it all together so you can finally see the full picture.</p>
+          <h3>Your Dashboards Tell the Truth</h3>
+          <p>You've got dashboards — but nobody trusts them. The data is stale, the metrics don't match, and half the reports were built by someone who left two years ago. We rebuild your reporting from the ground up: clean the data underneath, connect the right sources, and build dashboards that answer real business questions.</p>
         </div>
         <div class="value-prop-visual">
           <div style="width:100%; position:relative;">
@@ -120,36 +143,36 @@
             </div>
             <!-- Unified result -->
             <div style="background:var(--navy); color:#fff; border-radius:12px; padding:1.2rem 1.5rem; text-align:center;">
-              <div style="font-weight:700; font-size:1rem; margin-bottom:0.3rem;">One customer. One record. One truth.</div>
-              <div style="font-size:0.8rem; opacity:0.7;">Query anything, across every source, in seconds.</div>
+              <div style="font-weight:700; font-size:1rem; margin-bottom:0.3rem;">One dashboard. Every source. Real answers.</div>
+              <div style="font-size:0.8rem; opacity:0.7;">Your CEO stops asking "which number is right?"</div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Phase 3: Own -->
+      <!-- Phase 3: AI-Ready -->
       <div class="value-prop-item fade-in">
         <div class="value-prop-text">
           <div class="value-prop-number">03</div>
-          <h3>We Help You Cut the Cord</h3>
-          <p>In the age of AI, your proprietary data is your competitive edge. It's time to stop renting it. Stop paying per row. Stop giving other companies access to your most valuable asset. We help you build your own data warehouse — on your infrastructure, under your control — with all the tools you need to actually use it.</p>
+          <h3>Your AI Initiatives Have a Foundation</h3>
+          <p>Every AI project starts with the same question: is our data good enough? Usually the answer is no. We get your data to the point where your AI tools, automations, and internal copilots actually work — because the data underneath is clean, documented, and reliable. Then we stick around to make sure it stays that way.</p>
         </div>
         <div class="value-prop-visual">
           <div style="width:100%;">
             <!-- The shift -->
             <div style="display:flex; gap:1rem; align-items:stretch; margin-bottom:1.2rem;">
               <div style="flex:1; background:rgba(26,26,46,0.03); border:1px solid rgba(26,26,46,0.08); border-radius:12px; padding:1.2rem; display:flex; flex-direction:column; justify-content:center;">
-                <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-muted); margin-bottom:0.6rem; font-weight:600;">Renting your data</div>
-                <div style="font-size:0.82rem; color:var(--text-secondary); line-height:1.6;">Per-row pricing<br/>Vendor controls access<br/>Data leaves your network<br/>Locked into their formats</div>
+                <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-muted); margin-bottom:0.6rem; font-weight:600;">Without us</div>
+                <div style="font-size:0.82rem; color:var(--text-secondary); line-height:1.6;">AI hallucinates on bad data<br/>Automations fire wrong<br/>Nobody trusts the outputs<br/>Months wasted on rework</div>
               </div>
               <div style="display:flex; align-items:center; font-size:1.5rem; color:var(--accent); font-weight:700;">→</div>
               <div style="flex:1; background:var(--navy); border-radius:12px; padding:1.2rem; display:flex; flex-direction:column; justify-content:center;">
-                <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.1em; color:rgba(255,255,255,0.5); margin-bottom:0.6rem; font-weight:600;">Owning your data</div>
-                <div style="font-size:0.82rem; color:rgba(255,255,255,0.85); line-height:1.6;">Your warehouse<br/>Your credentials<br/>Your infrastructure<br/>Your competitive moat</div>
+                <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.1em; color:rgba(255,255,255,0.5); margin-bottom:0.6rem; font-weight:600;">With DataHooks</div>
+                <div style="font-size:0.82rem; color:rgba(255,255,255,0.85); line-height:1.6;">Clean, documented data<br/>Automations that work<br/>AI you can actually trust<br/>A partner keeping it right</div>
               </div>
             </div>
             <!-- Punchline -->
-            <div style="text-align:center; padding:0.8rem; font-size:0.85rem; color:var(--text-muted);">We build it, hand you the keys, and make sure your team can run it without us.</div>
+            <div style="text-align:center; padding:0.8rem; font-size:0.85rem; color:var(--text-muted);">We don't just set it up — we stay on to make sure it keeps working as your business evolves.</div>
           </div>
         </div>
       </div>
@@ -188,13 +211,13 @@
         <div class="integration-item"><div class="integration-icon"><img src="https://uploads-ssl.webflow.com/6130fa1501794e37c21867cf/6191a358ea41ef29215348ea_6132952d19c808dfca774120_Intercom.svg" alt="Intercom" /></div> Intercom</div>
         <div class="integration-item"><div class="integration-icon"><img src="https://cdn.prod.website-files.com/6130fa1501794e37c21867cf/6191a3b11a9912c7c4c63be1_613293e85e476629514bfdef_NetSuite.svg" alt="NetSuite" /></div> NetSuite</div>
         <div class="integration-item"><div class="integration-icon"><img src="https://uploads-ssl.webflow.com/6130fa1501794e37c21867cf/6191a36c65c3fd62bbae6e38_613294e19506d6310ebb0a81_Segment.svg" alt="Segment" /></div> Segment</div>
-        <div class="integration-item"><div class="integration-icon" style="background:rgba(52,73,94,0.08);"><span style="font-size:1rem;">🔗</span></div> REST APIs</div>
+        <div class="integration-item"><div class="integration-icon" style="background:rgba(52,73,94,0.08);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" stroke="#34495e" stroke-width="2" stroke-linecap="round"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" stroke="#34495e" stroke-width="2" stroke-linecap="round"/></svg></div> REST APIs</div>
         <div class="integration-item"><div class="integration-icon" style="background:rgba(33,115,70,0.08);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" fill="#217346"/><path d="M14 2v6h6" fill="#33a867"/><path d="M14 2L20 8H14V2Z" fill="#33a867"/><text x="10" y="17" font-family="Arial,sans-serif" font-size="8" font-weight="bold" fill="white" text-anchor="middle">X</text></svg></div> CSV / Excel / Parquet</div>
         <div class="integration-item"><div class="integration-icon" style="background:rgba(26,26,46,0.06);"><svg width="22" height="24" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="11" cy="5" rx="9" ry="4" fill="none" stroke="#1a1a2e" stroke-width="1.5"/><path d="M2 5v7c0 2.2 4 4 9 4s9-1.8 9-4V5" stroke="#1a1a2e" stroke-width="1.5" fill="none"/><ellipse cx="11" cy="17" rx="9" ry="4" fill="none" stroke="#1a1a2e" stroke-width="1.5"/><path d="M2 17v4c0 2.2 4 4 9 4s9-1.8 9-4v-4" stroke="#1a1a2e" stroke-width="1.5" fill="none"/></svg></div> Your Proprietary DB</div>
       </div>
 
       <div style="text-align:center; margin-top:2.5rem;">
-        <a href="solutions.html" class="btn btn-ghost">See how we work <span class="arrow">→</span></a>
+        <a href="/solutions/" class="btn btn-ghost">See how we work <span class="arrow">→</span></a>
       </div>
     </div>
   </section>
@@ -205,7 +228,7 @@
       <div class="cta-box">
         <h2>Let's get your data <span class="gradient-text">ready for the future</span></h2>
         <p>We'll hop on a call, look at what you're working with, and tell you exactly what we'd do. No pitch deck, no pressure.</p>
-        <a href="contact.html" class="btn btn-primary">Start a Conversation <span>→</span></a>
+        <a href="/contact/" class="btn btn-primary">Start a Conversation <span>→</span></a>
       </div>
     </div>
   </section>
@@ -215,38 +238,37 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo">
-            <span class="logo-icon"><img src="assets/logo-d-white.png" alt="Data Hooks" /></span> Data Hooks
+          <a href="/" class="logo">
+            <span class="logo-icon"><img src="assets/logo-d-white.png" alt="DataHooks" /></span> DataHooks
           </a>
-          <p>We help companies clean, unify, and own their data — so their AI and automations actually work.</p>
+          <p>We align your teams, fix your data, and make sure your dashboards, automations, and AI actually work.</p>
         </div>
         <div>
           <h4>Services</h4>
           <ul class="footer-links">
-            <li><a href="solutions.html">What We Do</a></li>
-            <li><a href="solutions.html#integrations">Data Sources</a></li>
-            <li><a href="solutions.html#process">Our Process</a></li>
+            <li><a href="/solutions/">What We Do</a></li>
+            <li><a href="/solutions/#integrations">Data Sources</a></li>
+            <li><a href="/solutions/#process">Our Process</a></li>
           </ul>
         </div>
         <div>
           <h4>Company</h4>
           <ul class="footer-links">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="/about/">About Us</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/contact/">Contact</a></li>
           </ul>
         </div>
         <div>
           <h4>Legal</h4>
           <ul class="footer-links">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Service</a></li>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms of Service</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <span>&copy; 2026 Data Hooks. All rights reserved.</span>
-        <span>San Francisco, CA</span>
+        <span>&copy; 2026 DataHooks. All rights reserved.</span>
       </div>
     </div>
   </footer>
