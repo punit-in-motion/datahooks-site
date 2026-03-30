@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Hooks — We Make Your Data Great</title>
+  <meta name="description" content="Data Hooks helps companies clean, unify, and own their data. We're the data team you wish you had." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon"><img src="assets/logo-d-white.png" alt="Data Hooks" /></span> Data Hooks
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="solutions.html">What We Do</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="btn btn-primary" style="padding:0.6rem 1.4rem;">Let's Talk</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="grid-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <span class="section-label">A Data Agency for AI-Driven Companies</span>
+        <h1>Great AI Systems Need <span class="gradient-text">Great Data</span></h1>
+        <p>Whether you're automating, building product, running marketing, or closing deals — these systems all run on data. And right now, your data is a mess. We fix that.</p>
+        <div class="hero-actions">
+          <a href="contact.html" class="btn btn-primary">Start a Conversation <span>→</span></a>
+          <a href="solutions.html" class="btn btn-secondary">How We Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW WE HELP ===== -->
+  <section class="value-props">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:4rem;">
+        <span class="section-label">How We Help</span>
+        <h2>Clean it. Unify it. Own it.</h2>
+        <p class="section-subtitle">We work with your team in three phases — starting with the quick wins and building toward full data independence.</p>
+      </div>
+
+      <!-- Phase 1: Clean -->
+      <div class="value-prop-item fade-in">
+        <div class="value-prop-text">
+          <div class="value-prop-number">01</div>
+          <h3>We Clean Your Data</h3>
+          <p>This is where we start. Your CRM is full of duplicates. Your analytics have broken schemas. Your product database hasn't been normalized in years. We come in, audit what you have, and clean it up — deduplication, validation, normalization, the works. Thoroughly, methodically, and with your sign-off at every step.</p>
+        </div>
+        <div class="value-prop-visual">
+          <div style="width:100%;">
+            <!-- Before -->
+            <div style="background:rgba(231,76,60,0.04); border:1px solid rgba(231,76,60,0.12); border-radius:12px; padding:1.2rem; margin-bottom:0.8rem;">
+              <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.1em; color:#e74c3c; margin-bottom:0.8rem; font-weight:600;">Before</div>
+              <div style="font-family:'Courier New',monospace; font-size:0.75rem; line-height:1.8; color:var(--navy);">
+                <div>John Smith &nbsp; john@acme.com</div>
+                <div>john smith &nbsp; j.smith@acme.com</div>
+                <div>JOHN SMITH &nbsp; john@acme.com</div>
+                <div style="color:#e74c3c; text-decoration:line-through; opacity:0.6;">Jon Smth &nbsp;&nbsp;&nbsp; NULL</div>
+                <div style="color:var(--text-muted);">… 12,847 more like this</div>
+              </div>
+            </div>
+            <!-- After -->
+            <div style="background:rgba(0,184,148,0.04); border:1px solid rgba(0,184,148,0.15); border-radius:12px; padding:1.2rem;">
+              <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.1em; color:#00b894; margin-bottom:0.8rem; font-weight:600;">After</div>
+              <div style="font-family:'Courier New',monospace; font-size:0.75rem; line-height:1.8; color:var(--navy);">
+                <div><span style="color:#00b894;">✓</span> John Smith &nbsp; john@acme.com &nbsp; <span style="color:var(--text-muted);">Acme Inc.</span></div>
+                <div style="color:var(--text-muted); font-size:0.7rem; margin-top:0.3rem;">3 duplicates merged · email verified · company matched</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 2: Unify -->
+      <div class="value-prop-item reverse fade-in">
+        <div class="value-prop-text">
+          <div class="value-prop-number">02</div>
+          <h3>We Unify Your Sources</h3>
+          <p>You have really interesting data. But right now it lives on five different platforms — your CRM, your product database, Google Analytics, ad platforms, third-party vendors. None of them talk to each other. We build the pipelines that bring it all together so you can finally see the full picture.</p>
+        </div>
+        <div class="value-prop-visual">
+          <div style="width:100%; position:relative;">
+            <!-- Scattered sources -->
+            <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.6rem; margin-bottom:1.2rem;">
+              <div style="background:#fff; border:1px solid rgba(26,26,46,0.08); border-radius:10px; padding:0.8rem; text-align:center; font-size:0.78rem; color:var(--navy); font-weight:500;">CRM</div>
+              <div style="background:#fff; border:1px solid rgba(26,26,46,0.08); border-radius:10px; padding:0.8rem; text-align:center; font-size:0.78rem; color:var(--navy); font-weight:500;">Product DB</div>
+              <div style="background:#fff; border:1px solid rgba(26,26,46,0.08); border-radius:10px; padding:0.8rem; text-align:center; font-size:0.78rem; color:var(--navy); font-weight:500;">Analytics</div>
+              <div style="background:#fff; border:1px solid rgba(26,26,46,0.08); border-radius:10px; padding:0.8rem; text-align:center; font-size:0.78rem; color:var(--navy); font-weight:500;">Ad Platforms</div>
+              <div style="background:#fff; border:1px solid rgba(26,26,46,0.08); border-radius:10px; padding:0.8rem; text-align:center; font-size:0.78rem; color:var(--navy); font-weight:500;">Billing</div>
+              <div style="background:#fff; border:1px solid rgba(26,26,46,0.08); border-radius:10px; padding:0.8rem; text-align:center; font-size:0.78rem; color:var(--text-muted); font-weight:500;">+ more</div>
+            </div>
+            <!-- Convergence lines -->
+            <div style="text-align:center; margin-bottom:1.2rem;">
+              <svg width="200" height="32" viewBox="0 0 200 32" fill="none" style="display:inline-block;">
+                <path d="M20 0 L100 28" stroke="var(--navy)" stroke-width="1" opacity="0.15"/>
+                <path d="M60 0 L100 28" stroke="var(--navy)" stroke-width="1" opacity="0.15"/>
+                <path d="M100 0 L100 28" stroke="var(--navy)" stroke-width="1.5" opacity="0.25"/>
+                <path d="M140 0 L100 28" stroke="var(--navy)" stroke-width="1" opacity="0.15"/>
+                <path d="M180 0 L100 28" stroke="var(--navy)" stroke-width="1" opacity="0.15"/>
+              </svg>
+            </div>
+            <!-- Unified result -->
+            <div style="background:var(--navy); color:#fff; border-radius:12px; padding:1.2rem 1.5rem; text-align:center;">
+              <div style="font-weight:700; font-size:1rem; margin-bottom:0.3rem;">One customer. One record. One truth.</div>
+              <div style="font-size:0.8rem; opacity:0.7;">Query anything, across every source, in seconds.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 3: Own -->
+      <div class="value-prop-item fade-in">
+        <div class="value-prop-text">
+          <div class="value-prop-number">03</div>
+          <h3>We Help You Cut the Cord</h3>
+          <p>In the age of AI, your proprietary data is your competitive edge. It's time to stop renting it. Stop paying per row. Stop giving other companies access to your most valuable asset. We help you build your own data warehouse — on your infrastructure, under your control — with all the tools you need to actually use it.</p>
+        </div>
+        <div class="value-prop-visual">
+          <div style="width:100%;">
+            <!-- The shift -->
+            <div style="display:flex; gap:1rem; align-items:stretch; margin-bottom:1.2rem;">
+              <div style="flex:1; background:rgba(26,26,46,0.03); border:1px solid rgba(26,26,46,0.08); border-radius:12px; padding:1.2rem; display:flex; flex-direction:column; justify-content:center;">
+                <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-muted); margin-bottom:0.6rem; font-weight:600;">Renting your data</div>
+                <div style="font-size:0.82rem; color:var(--text-secondary); line-height:1.6;">Per-row pricing<br/>Vendor controls access<br/>Data leaves your network<br/>Locked into their formats</div>
+              </div>
+              <div style="display:flex; align-items:center; font-size:1.5rem; color:var(--accent); font-weight:700;">→</div>
+              <div style="flex:1; background:var(--navy); border-radius:12px; padding:1.2rem; display:flex; flex-direction:column; justify-content:center;">
+                <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.1em; color:rgba(255,255,255,0.5); margin-bottom:0.6rem; font-weight:600;">Owning your data</div>
+                <div style="font-size:0.82rem; color:rgba(255,255,255,0.85); line-height:1.6;">Your warehouse<br/>Your credentials<br/>Your infrastructure<br/>Your competitive moat</div>
+              </div>
+            </div>
+            <!-- Punchline -->
+            <div style="text-align:center; padding:0.8rem; font-size:0.85rem; color:var(--text-muted);">We build it, hand you the keys, and make sure your team can run it without us.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DATA SOURCES WE WORK WITH ===== -->
+  <section id="integrations">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:3rem;">
+        <span class="section-label">Data Sources We Work With</span>
+        <h2>If you have it, we can hook into it</h2>
+        <p class="section-subtitle">CRMs, databases, analytics platforms, ad channels, payment systems, spreadsheets — we've seen it all and we know how to pull it together.</p>
+      </div>
+
+      <div class="integrations-grid">
+        <div class="integration-item"><div class="integration-icon"><img src="https://cdn.prod.website-files.com/6130fa1501794e37c21867cf/6191a3b1aac6b004333497bd_613293ea19b75f3fbc99ef86_Salesforce.svg" alt="Salesforce" /></div> Salesforce</div>
+        <div class="integration-item"><div class="integration-icon"><img src="https://cdn.prod.website-files.com/6130fa1501794e37c21867cf/6191a3b27528a1f8efb3d519_613293e68413b6828fa52bea_Hubspot.svg" alt="HubSpot" /></div> HubSpot</div>
+        <div class="integration-item"><div class="integration-icon"><img src="https://uploads-ssl.webflow.com/6130fa1501794e37c21867cf/63766a3e272c5a3cf422d5dd_google-analytics.svg" alt="Google Analytics" /></div> Google Analytics</div>
+        <div class="integration-item"><div class="integration-icon"><img src="https://cdn.prod.website-files.com/6130fa1501794e37c21867cf/6191a3b0d6736d04e2c7a272_613293ec207945ebed3b8ca7_Property_1_GoogleAds.svg" alt="Google Ads" /></div> Google Ads</div>
+        <div class="integration-item"><div class="integration-icon"><img src="https://cdn.prod.website-files.com/6130fa1501794e37c21867cf/6191a3a07dd18b4e86f7b1e1_613294219b14d081782d5b50_Property_1_facebook.svg" alt="Meta Ads" /></div> Meta Ads</div>
+        <div class="integration-item"><div class="integration-icon"><img src="https://uploads-ssl.webflow.com/6130fa1501794e37c21867cf/6191a372ea8005f2f45e0157_613294c85c9f095071776155_Shopify.svg" alt="Shopify" /></div> Shopify</div>
+        <div class="integration-item"><div class="integration-icon"><img src="https://cdn.prod.website-files.com/6130fa1501794e37c21867cf/61b52e33b36e0c1026df3d8b_color%3Dcolor.svg" alt="PostgreSQL" /></div> PostgreSQL</div>
+        <div class="integration-item"><div class="integration-icon"><img src="https://cdn.prod.website-files.com/6130fa1501794e37c21867cf/65b80f59f8238b21dc0c6150_mysql.svg" alt="MySQL" /></div> MySQL</div>
+        <div class="integration-item"><div class="integration-icon"><img src="https://uploads-ssl.webflow.com/6130fa1501794e37c21867cf/6191a390ea80052bb25e02fa_613294634822a07a3789f6a4_Stripe.svg" alt="Stripe" /></div> Stripe</div>
+        <div class="integration-item"><div class="integration-icon"><img src="https://cdn.prod.website-files.com/6130fa1501794e37c21867cf/6191a3acdc1f697ac8b290e4_613293fc6f48627332b4d947_Amazon_S3.svg" alt="Amazon S3" /></div> Amazon S3</div>
+        <div class="integration-item"><div class="integration-icon"><img src="https://cdn.prod.website-files.com/6130fa1501794e37c21867cf/65b80f7aa7e05ffd0a44b711_bigQuery.svg" alt="BigQuery" /></div> BigQuery</div>
+        <div class="integration-item"><div class="integration-icon"><img src="https://cdn.prod.website-files.com/6130fa1501794e37c21867cf/63f4eac030e323beb8216901_snowflake.svg" alt="Snowflake" /></div> Snowflake</div>
+        <div class="integration-item"><div class="integration-icon"><img src="https://uploads-ssl.webflow.com/6130fa1501794e37c21867cf/6191a368aaba4d0de2d3d5f1_613294ee1f940c630cec3925_Marketo.svg" alt="Marketo" /></div> Marketo</div>
+        <div class="integration-item"><div class="integration-icon"><img src="https://uploads-ssl.webflow.com/6130fa1501794e37c21867cf/6191a36cd187500ebd7ccbed_613294e3b24273112539e806_MailChimp.svg" alt="Mailchimp" /></div> Mailchimp</div>
+        <div class="integration-item"><div class="integration-icon"><img src="https://uploads-ssl.webflow.com/6130fa1501794e37c21867cf/63d84ff8bb232a77c275633a_activecampaign.svg" alt="ActiveCampaign" /></div> ActiveCampaign</div>
+        <div class="integration-item"><div class="integration-icon"><img src="https://cdn.prod.website-files.com/6130fa1501794e37c21867cf/6191a3901b4f74718ba3916a_613294646e81b85ff5c7a1ef_MongoDB.svg" alt="MongoDB" /></div> MongoDB</div>
+        <div class="integration-item"><div class="integration-icon"><img src="https://cdn.prod.website-files.com/6130fa1501794e37c21867cf/69729571ca7de01d31367ad5_redshift.png" alt="Redshift" /></div> Redshift</div>
+        <div class="integration-item"><div class="integration-icon"><img src="https://uploads-ssl.webflow.com/6130fa1501794e37c21867cf/6191a36644ab471e539c9937_613294f6c1525432b3f611cd_Mixpanel.svg" alt="Mixpanel" /></div> Mixpanel</div>
+        <div class="integration-item"><div class="integration-icon"><img src="https://uploads-ssl.webflow.com/6130fa1501794e37c21867cf/6198221a8e10fc428760c2c3_color%3Dcolor.svg" alt="Amplitude" /></div> Amplitude</div>
+        <div class="integration-item"><div class="integration-icon"><img src="https://uploads-ssl.webflow.com/6130fa1501794e37c21867cf/6191a358ea41ef29215348ea_6132952d19c808dfca774120_Intercom.svg" alt="Intercom" /></div> Intercom</div>
+        <div class="integration-item"><div class="integration-icon"><img src="https://cdn.prod.website-files.com/6130fa1501794e37c21867cf/6191a3b11a9912c7c4c63be1_613293e85e476629514bfdef_NetSuite.svg" alt="NetSuite" /></div> NetSuite</div>
+        <div class="integration-item"><div class="integration-icon"><img src="https://uploads-ssl.webflow.com/6130fa1501794e37c21867cf/6191a36c65c3fd62bbae6e38_613294e19506d6310ebb0a81_Segment.svg" alt="Segment" /></div> Segment</div>
+        <div class="integration-item"><div class="integration-icon" style="background:rgba(52,73,94,0.08);"><span style="font-size:1rem;">🔗</span></div> REST APIs</div>
+        <div class="integration-item"><div class="integration-icon" style="background:rgba(33,115,70,0.08);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" fill="#217346"/><path d="M14 2v6h6" fill="#33a867"/><path d="M14 2L20 8H14V2Z" fill="#33a867"/><text x="10" y="17" font-family="Arial,sans-serif" font-size="8" font-weight="bold" fill="white" text-anchor="middle">X</text></svg></div> CSV / Excel / Parquet</div>
+        <div class="integration-item"><div class="integration-icon" style="background:rgba(26,26,46,0.06);"><svg width="22" height="24" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="11" cy="5" rx="9" ry="4" fill="none" stroke="#1a1a2e" stroke-width="1.5"/><path d="M2 5v7c0 2.2 4 4 9 4s9-1.8 9-4V5" stroke="#1a1a2e" stroke-width="1.5" fill="none"/><ellipse cx="11" cy="17" rx="9" ry="4" fill="none" stroke="#1a1a2e" stroke-width="1.5"/><path d="M2 17v4c0 2.2 4 4 9 4s9-1.8 9-4v-4" stroke="#1a1a2e" stroke-width="1.5" fill="none"/></svg></div> Your Proprietary DB</div>
+      </div>
+
+      <div style="text-align:center; margin-top:2.5rem;">
+        <a href="solutions.html" class="btn btn-ghost">See how we work <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Let's get your data <span class="gradient-text">ready for the future</span></h2>
+        <p>We'll hop on a call, look at what you're working with, and tell you exactly what we'd do. No pitch deck, no pressure.</p>
+        <a href="contact.html" class="btn btn-primary">Start a Conversation <span>→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon"><img src="assets/logo-d-white.png" alt="Data Hooks" /></span> Data Hooks
+          </a>
+          <p>We help companies clean, unify, and own their data — so their AI and automations actually work.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="solutions.html">What We Do</a></li>
+            <li><a href="solutions.html#integrations">Data Sources</a></li>
+            <li><a href="solutions.html#process">Our Process</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Data Hooks. All rights reserved.</span>
+        <span>San Francisco, CA</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobileToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

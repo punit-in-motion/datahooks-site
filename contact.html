@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Let's Talk — Data Hooks</title>
+  <meta name="description" content="Talk to Data Hooks. We help companies clean, unify, and own their data — the right way." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    @media (max-width: 768px) {
+      .contact-layout { grid-template-columns: 1fr; gap: 3rem; }
+    }
+    .contact-info-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+    }
+    .contact-info-card h3 { margin-bottom: 1rem; }
+    .contact-info-card p { color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.8; }
+    .contact-detail {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 0;
+      border-top: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+    }
+    .contact-detail-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: rgba(108,92,231,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .form-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .form-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: var(--gradient-1);
+    }
+    .form-card h2 { margin-bottom: 0.5rem; font-size: 1.6rem; }
+    .form-card > p { color: var(--text-secondary); margin-bottom: 2rem; font-size: 0.95rem; }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    @media (max-width: 480px) {
+      .form-row { grid-template-columns: 1fr; }
+    }
+    .form-success {
+      display: none;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    .form-success.show { display: block; }
+    .form-success .checkmark {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: var(--gradient-1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin: 0 auto 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo"><span class="logo-icon"><img src="assets/logo-d-white.png" alt="Data Hooks" /></span> Data Hooks</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="solutions.html">What We Do</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="btn btn-primary active" style="padding:0.6rem 1.4rem;">Let's Talk</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HEADER ===== -->
+  <section class="page-header" style="padding-bottom:2rem;">
+    <div class="container">
+      <span class="section-label">Get In Touch</span>
+      <h1>Let's talk about <span class="gradient-text">your data</span></h1>
+      <p>Tell us what you're dealing with. We'll hop on a call and give you an honest assessment — no sales deck, no pressure.</p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT FORM + INFO ===== -->
+  <section style="padding-top:2rem;">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Left: Info -->
+        <div>
+          <div class="contact-info-card fade-in">
+            <h3>Why book a demo?</h3>
+            <p>In 30 minutes, we'll walk through your current data stack, identify quick wins, and show you a live example of how Data Hooks can unify and clean your data.</p>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📧</div>
+              <div>
+                <div style="font-weight:600; color:var(--text-primary); margin-bottom:0.2rem;">Email us</div>
+                hello@datahooks.io
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📍</div>
+              <div>
+                <div style="font-weight:600; color:var(--text-primary); margin-bottom:0.2rem;">Location</div>
+                San Francisco, CA
+              </div>
+            </div>
+            <div class="contact-detail" style="border-bottom: 1px solid var(--border-color); padding-bottom:1rem;">
+              <div class="contact-detail-icon">⏱️</div>
+              <div>
+                <div style="font-weight:600; color:var(--text-primary); margin-bottom:0.2rem;">Response time</div>
+                Within 24 hours
+              </div>
+            </div>
+          </div>
+
+          <!-- Trust signals -->
+          <div class="fade-in" style="margin-top:2rem; display:flex; flex-direction:column; gap:1rem;">
+            <div style="display:flex; align-items:center; gap:0.8rem; color:var(--text-secondary); font-size:0.9rem;">
+              <span style="color:var(--accent);">✓</span> No commitment required
+            </div>
+            <div style="display:flex; align-items:center; gap:0.8rem; color:var(--text-secondary); font-size:0.9rem;">
+              <span style="color:var(--accent);">✓</span> Free data audit included
+            </div>
+            <div style="display:flex; align-items:center; gap:0.8rem; color:var(--text-secondary); font-size:0.9rem;">
+              <span style="color:var(--accent);">✓</span> Talk to engineers, not salespeople
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="form-card fade-in">
+          <div id="formContent">
+            <h2>Tell us about your data</h2>
+            <p>Fill out the form and we'll reach out to set up a call.</p>
+
+            <form id="demoForm" onsubmit="handleSubmit(event)">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name *</label>
+                  <input type="text" id="firstName" class="form-input" placeholder="Jane" required />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name *</label>
+                  <input type="text" id="lastName" class="form-input" placeholder="Smith" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Work Email *</label>
+                <input type="email" id="email" class="form-input" placeholder="jane@company.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="company">Company *</label>
+                <input type="text" id="company" class="form-input" placeholder="Acme Inc." required />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="role">Your Role</label>
+                  <select id="role" class="form-select">
+                    <option value="">Select...</option>
+                    <option>Engineering / Data</option>
+                    <option>Product</option>
+                    <option>Marketing</option>
+                    <option>Operations</option>
+                    <option>Executive / C-Suite</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="size">Company Size</label>
+                  <select id="size" class="form-select">
+                    <option value="">Select...</option>
+                    <option>1–10</option>
+                    <option>11–50</option>
+                    <option>51–200</option>
+                    <option>201–1000</option>
+                    <option>1000+</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">What are your biggest data challenges?</label>
+                <textarea id="message" class="form-textarea" placeholder="Tell us about your current data stack, pain points, or goals..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; font-size:1rem; padding:1rem;">
+                Send It Over <span>→</span>
+              </button>
+            </form>
+          </div>
+
+          <!-- Success state -->
+          <div class="form-success" id="formSuccess">
+            <div class="checkmark">✓</div>
+            <h2>We'll be in touch!</h2>
+            <p style="color:var(--text-secondary); margin-top:0.8rem; font-size:1.05rem;">We've received your request and will be in touch within 24 hours to schedule your demo.</p>
+            <a href="index.html" class="btn btn-secondary" style="margin-top:2rem;">Back to Home</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" style="margin-top:4rem;">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><span class="logo-icon"><img src="assets/logo-d-white.png" alt="Data Hooks" /></span> Data Hooks</a>
+          <p>We help companies clean, unify, and own their data — so their AI and automations actually work.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="solutions.html">What We Do</a></li>
+            <li><a href="solutions.html#integrations">Data Sources</a></li>
+            <li><a href="solutions.html#process">Our Process</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Data Hooks. All rights reserved.</span>
+        <span>San Francisco, CA</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobileToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('formContent').style.display = 'none';
+      document.getElementById('formSuccess').classList.add('show');
+    }
+  </script>
+
+</body>
+</html>
