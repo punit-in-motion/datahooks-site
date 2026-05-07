@@ -375,6 +375,39 @@ section {
   line-height: 1.8;
 }
 
+.hero-definition {
+  margin-top: 1.5rem;
+  border-left: 3px solid var(--accent);
+  padding-left: 1.2rem;
+  max-width: 640px;
+}
+.hero-definition .def-term {
+  margin-bottom: 0.4rem;
+}
+.hero-definition .def-term strong {
+  color: var(--navy);
+  font-size: 1.1rem;
+}
+.hero-definition .def-term span {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+.hero-definition .def-body {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+.hero-tagline {
+  margin-top: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  max-width: 640px;
+  line-height: 1.7;
+}
+
 .hero-actions {
   display: flex;
   gap: 1rem;
