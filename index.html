@@ -7,17 +7,17 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Datahooks | We Make Your Data Great</title>
-  <meta name="description" content="Datahooks is a data agency that aligns your teams, fixes your data, and builds the dashboards and automations your business actually needs." />
-    <link rel="canonical" href="https://datahooks.net/" />
+  <title>Datahooks | Your CRM Data Is Costing You More Than You Realize</title>
+  <meta name="description" content="Most HubSpot and Salesforce instances are broken in ways that cost real money. Datahooks fixes your data, builds trusted dashboards, and gets you AI-ready." />
+  <link rel="canonical" href="https://datahooks.net/" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://datahooks.net/" />
-  <meta property="og:title" content="Datahooks | Great AI Systems Need Great Data" />
-  <meta property="og:description" content="Datahooks aligns your teams, fixes your data, and builds the dashboards, automations, and AI tools your business needs. Your ongoing data partner." />
+  <meta property="og:title" content="Datahooks | Your CRM Data Is Costing You More Than You Realize" />
+  <meta property="og:description" content="Most HubSpot and Salesforce instances are broken in ways that cost real money. Datahooks fixes your data, builds trusted dashboards, and gets you AI-ready." />
   <meta property="og:site_name" content="Datahooks" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Datahooks | Great AI Systems Need Great Data" />
-  <meta name="twitter:description" content="Datahooks aligns your teams, fixes your data, and builds the dashboards, automations, and AI tools your business needs. Your ongoing data partner." />
+  <meta name="twitter:title" content="Datahooks | Your CRM Data Is Costing You More Than You Realize" />
+  <meta name="twitter:description" content="Most HubSpot and Salesforce instances are broken in ways that cost real money. Datahooks fixes your data, builds trusted dashboards, and gets you AI-ready." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
@@ -27,7 +27,7 @@
     "@type": "Organization",
     "name": "Datahooks",
     "url": "https://datahooks.net",
-    "description": "Datahooks aligns your teams, fixes your data, and builds the dashboards, automations, and AI tools your business needs.",
+    "description": "Datahooks fixes your CRM data, builds trusted dashboards, and gets your business AI-ready.",
     "contactPoint": {
       "@type": "ContactPoint",
       "contactType": "sales",
@@ -36,6 +36,267 @@
     "sameAs": []
   }
   </script>
+  <style>
+    /* ===== HOMEPAGE STYLES — LIGHT THEME ===== */
+
+    /* --- Hero --- */
+    .hp-hero {
+      background: var(--bg-primary);
+      padding: 7rem 0 3.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hp-hero::before {
+      content: '';
+      position: absolute;
+      top: -200px; right: -100px;
+      width: 500px; height: 500px;
+      background: var(--accent);
+      border-radius: 50%;
+      filter: blur(160px);
+      opacity: 0.06;
+    }
+    .hp-hero::after {
+      content: '';
+      position: absolute;
+      bottom: -100px; left: -100px;
+      width: 400px; height: 400px;
+      background: var(--navy);
+      border-radius: 50%;
+      filter: blur(140px);
+      opacity: 0.04;
+    }
+    .hp-hero .container { position: relative; z-index: 1; max-width: 960px; }
+    .hp-eyebrow {
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.2rem;
+      font-weight: 600;
+    }
+    .hp-hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      line-height: 1.15;
+      font-weight: 800;
+      margin-bottom: 1.2rem;
+      color: var(--navy);
+      max-width: 780px;
+    }
+    .hp-hero h1 em { font-style: italic; color: var(--accent); }
+    .hp-hero-sub {
+      font-size: 0.98rem;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin-bottom: 1.8rem;
+    }
+    .hp-hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2.5rem; }
+
+    /* --- Hero proof blocks --- */
+    .hp-proof-block {
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-color);
+    }
+    .hp-proof-block + .hp-proof-block {
+      padding-top: 1.5rem;
+      border-top: none;
+    }
+    .hp-proof-label {
+      font-size: 0.6rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+    }
+    .hp-proof-label.data { color: var(--text-muted); }
+    .hp-proof-label.ai { color: var(--accent); }
+
+    /* Data stat cards */
+    .hp-stat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.7rem;
+    }
+    .hp-stat-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 1.1rem 1rem;
+      transition: all 0.3s ease;
+    }
+    .hp-stat-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+    .hp-stat-num {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1;
+      margin-bottom: 0.3rem;
+    }
+    .hp-stat-num span { color: var(--accent); }
+    .hp-stat-label {
+      font-size: 0.66rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+      letter-spacing: 0.02em;
+    }
+
+    /* AI risk cards */
+    .hp-ai-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.7rem;
+    }
+    .hp-ai-card {
+      background: #fff;
+      border: 1px solid var(--border-color);
+      border-left: 3px solid var(--accent);
+      border-radius: 10px;
+      padding: 1.1rem 1rem;
+      transition: all 0.3s ease;
+    }
+    .hp-ai-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+    .hp-ai-card-label {
+      font-size: 0.6rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+    }
+    .hp-ai-card p {
+      font-size: 0.76rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* --- Promise --- */
+    .hp-promise { background: var(--bg-secondary); }
+    .hp-promise .container { max-width: 900px; }
+    .hp-promise-intro {
+      max-width: 680px;
+      margin-top: 1rem;
+    }
+    .hp-promise-intro p {
+      color: var(--text-secondary);
+      line-height: 1.8;
+    }
+    .hp-def {
+      border-left: 3px solid var(--accent);
+      padding-left: 1.2rem;
+      margin-top: 1.5rem;
+    }
+    .hp-def-term { margin-bottom: 0.25rem; }
+    .hp-def-term strong { color: var(--navy); font-size: 1rem; }
+    .hp-def-term span { color: var(--text-muted); font-size: 0.8rem; font-style: italic; margin-left: 0.3rem; }
+    .hp-def-body { color: var(--text-secondary); font-size: 0.9rem; line-height: 1.7; margin: 0; }
+
+    .hp-promise-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    .hp-promise-card {
+      background: #fff;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 2rem 1.6rem;
+      transition: all var(--transition);
+      border-top: 3px solid var(--border-color);
+    }
+    .hp-promise-card:hover {
+      border-top-color: var(--accent);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+    .hp-promise-card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.6rem;
+    }
+    .hp-promise-card p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin: 0;
+    }
+    .hp-promise-num {
+      display: inline-block;
+      font-size: 0.62rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--accent);
+      background: var(--accent-bg);
+      padding: 0.25rem 0.6rem;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+
+    /* --- Calculator --- */
+    .hp-calc-section { background: var(--bg-primary); }
+    .hp-calc-section .container { max-width: 780px; }
+    .hp-calc {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      margin-top: 1.5rem;
+    }
+    .hp-calc h4 {
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 1.2rem;
+      font-weight: 700;
+    }
+    .hp-calc-controls { display: flex; flex-wrap: wrap; gap: 1.2rem; margin-bottom: 1.5rem; }
+    .hp-calc-ctrl { flex: 1; min-width: 170px; }
+    .hp-calc-ctrl label { display: block; font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.4rem; font-weight: 500; }
+    .hp-calc-ctrl input[type=range] { width: 100%; accent-color: var(--accent); height: 6px; }
+    .hp-calc-ctrl .val { font-size: 0.82rem; color: var(--navy); margin-top: 0.3rem; font-weight: 600; }
+    .hp-calc-output { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+    .hp-calc-out { background: #fff; border: 1px solid var(--border-color); border-radius: 10px; padding: 1rem 1.2rem; }
+    .hp-calc-out-label { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.3rem; }
+    .hp-calc-out-val { font-size: 1.6rem; font-weight: 800; color: var(--accent); }
+    .hp-calc-out-val.ok { color: #00b894; }
+
+    /* --- Integrations --- */
+    .hp-integrations { background: var(--bg-secondary); }
+    .hp-integrations .container { max-width: 900px; }
+
+    /* --- Read more link --- */
+    .hp-read-more {
+      text-align: center;
+      margin-top: 2.5rem;
+    }
+    .hp-read-more a {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--accent);
+      transition: color var(--transition);
+    }
+    .hp-read-more a:hover { color: var(--accent-dark); }
+
+    /* --- Responsive --- */
+    @media (max-width: 768px) {
+      .hp-hero { padding: 6.5rem 0 2.5rem; }
+      .hp-hero h1 { font-size: clamp(1.6rem, 5vw, 2.2rem); }
+      .hp-stat-grid { grid-template-columns: 1fr 1fr; }
+      .hp-ai-grid { grid-template-columns: 1fr 1fr; }
+      .hp-calc-output { grid-template-columns: 1fr; }
+      .hp-promise-grid { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
 
@@ -58,142 +319,147 @@
   </nav>
 
   <!-- ===== HERO ===== -->
-  <section class="hero">
-    <div class="hero-bg">
-      <div class="orb orb-1"></div>
-      <div class="orb orb-2"></div>
-      <div class="grid-overlay"></div>
-    </div>
+  <section class="hp-hero">
     <div class="container">
-      <div class="hero-content">
-        <span class="section-label">A Data Agency for AI-Driven Companies</span>
-        <h1>Great AI Systems Need <span class="gradient-text">Great Data</span></h1>
-        <div class="hero-definition">
-          <div class="def-term"><strong>datahook</strong> <span>/ˈdeɪ.tə.hʊk/ noun</span></div>
-          <div class="def-body">A connection that channels valuable data from one system into a place where it can be acted on.</div>
+      <div class="hp-eyebrow">A Data Agency for the AI Era</div>
+      <h1>Your CRM data is costing you more than you realize, and <em>AI is about to make it worse</em></h1>
+      <p class="hp-hero-sub">Most HubSpot and Salesforce instances are broken in ways that cost real money. Duplicate records, missing attribution, sequences nobody owns. That was manageable before. It is not anymore.</p>
+      <!-- Proof: data problem stats -->
+      <div class="hp-proof-block">
+        <div class="hp-proof-label data">The data problem</div>
+        <div class="hp-stat-grid">
+          <div class="hp-stat-card">
+            <div class="hp-stat-num"><span>30</span>%</div>
+            <div class="hp-stat-label">of CRM contacts go stale every year</div>
+          </div>
+          <div class="hp-stat-card">
+            <div class="hp-stat-num"><span>27</span>%</div>
+            <div class="hp-stat-label">of rep time lost to manual work</div>
+          </div>
+          <div class="hp-stat-card">
+            <div class="hp-stat-num"><span>$12</span>M</div>
+            <div class="hp-stat-label">avg. annual cost of poor data quality</div>
+          </div>
+          <div class="hp-stat-card">
+            <div class="hp-stat-num"><span>2&times;</span></div>
+            <div class="hp-stat-label">faster growth with clean pipeline data</div>
+          </div>
         </div>
-        <div class="hero-tagline">We help you clean, validate, and build the AI-ready data you need.</div>
-        <div class="hero-actions">
-          <a href="/contact/" class="btn btn-primary">Start a Conversation <span>→</span></a>
-          <a href="/solutions/" class="btn btn-secondary">How We Work</a>
+      </div>
+
+      <!-- Proof: AI risk cards -->
+      <div class="hp-proof-block">
+        <div class="hp-proof-label ai">Why AI makes it worse</div>
+        <div class="hp-ai-grid">
+          <div class="hp-ai-card">
+            <div class="hp-ai-card-label">Lead Scoring</div>
+            <p>Models trained on contacts with missing source data misweight every channel</p>
+          </div>
+          <div class="hp-ai-card">
+            <div class="hp-ai-card-label">Forecasting</div>
+            <p>Pipeline AI cannot tell active deals from ones that went stale six months ago</p>
+          </div>
+          <div class="hp-ai-card">
+            <div class="hp-ai-card-label">AI Assistants</div>
+            <p>Copilots surface duplicates, blank fields, and wrong attributions as fact</p>
+          </div>
+          <div class="hp-ai-card">
+            <div class="hp-ai-card-label">Personalization</div>
+            <p>Outreach tools generate generic or factually wrong content from bad profiles</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hp-hero-actions">
+        <a href="/contact/" class="btn btn-primary">Start a Conversation <span>→</span></a>
+        <a href="/whitepaper/" class="btn btn-secondary">Read the Whitepaper</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== THE PROMISE ===== -->
+  <section class="hp-promise fade-in">
+    <div class="container">
+      <span class="section-label">What We Do</span>
+      <h2>We fix the data. Then we make it work for you.</h2>
+      <div class="hp-promise-intro">
+        <p>Most agencies hand you a dashboard and walk away. We stay. We remediate the data underneath, build reporting you can trust, wire up the automations that should have been running from day one, and get your systems AI-ready. Then we stick around to make sure it keeps working.</p>
+        <div class="hp-def">
+          <div class="hp-def-term"><strong>datahook</strong> <span>/ˈdeɪ.tə.hʊk/ noun</span></div>
+          <div class="hp-def-body">A connection that channels valuable data from one system into a place where it can be acted on.</div>
+        </div>
+      </div>
+
+      <div class="hp-promise-grid">
+        <div class="hp-promise-card">
+          <div class="hp-promise-num">Clean</div>
+          <h3>Fix what's broken</h3>
+          <p>Deduplicate records, correct attribution, standardize fields, remediate contacts and deals. Build the foundation everything else depends on.</p>
+        </div>
+        <div class="hp-promise-card">
+          <div class="hp-promise-num">Build</div>
+          <h3>Make it visible</h3>
+          <p>Dashboards that tell the truth. Pipeline health, campaign attribution, rep performance. Real numbers validated against clean data.</p>
+        </div>
+        <div class="hp-promise-card">
+          <div class="hp-promise-num">Scale</div>
+          <h3>Get AI-ready</h3>
+          <p>Automations that fire on their own, lead scoring you can trust, and AI tools that work because the inputs underneath them are reliable.</p>
+        </div>
+      </div>
+
+      <div class="hp-read-more">
+        <a href="/whitepaper/">Read the full whitepaper →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CALCULATOR ===== -->
+  <section class="hp-calc-section fade-in">
+    <div class="container">
+      <span class="section-label">The Cost</span>
+      <h2>How much is bad data costing you?</h2>
+      <p style="color:var(--text-secondary); line-height:1.8; margin-top:1rem;">On average, 12% of revenue pipeline is lost to data quality issues and manual overhead. Adjust the sliders to see your number.</p>
+
+      <div class="hp-calc">
+        <h4>Revenue leakage estimator</h4>
+        <div class="hp-calc-controls">
+          <div class="hp-calc-ctrl">
+            <label>Sales team size</label>
+            <input type="range" min="2" max="50" value="12" id="team-size" oninput="calcLeak()">
+            <div class="val" id="team-size-val">12 reps</div>
+          </div>
+          <div class="hp-calc-ctrl">
+            <label>Average deal value</label>
+            <input type="range" min="5000" max="150000" step="5000" value="35000" id="deal-val" oninput="calcLeak()">
+            <div class="val" id="deal-val-val">$35,000</div>
+          </div>
+          <div class="hp-calc-ctrl">
+            <label>Deals closed per rep per year</label>
+            <input type="range" min="4" max="40" value="12" id="deals-rep" oninput="calcLeak()">
+            <div class="val" id="deals-rep-val">12 deals</div>
+          </div>
+        </div>
+        <div class="hp-calc-output">
+          <div class="hp-calc-out">
+            <div class="hp-calc-out-label">Estimated pipeline lost to bad data and manual overhead</div>
+            <div class="hp-calc-out-val" id="leak-val">$1.5M</div>
+          </div>
+          <div class="hp-calc-out">
+            <div class="hp-calc-out-label">Recoverable revenue with a clean, automated CRM</div>
+            <div class="hp-calc-out-val ok" id="recover-val">$1.1M</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== HOW WE HELP ===== -->
-  <section class="value-props">
-    <div class="container">
-      <div style="text-align:center; margin-bottom:4rem;">
-        <span class="section-label">How We Help</span>
-        <h2>Align your teams. Fix your data. Build what matters.</h2>
-        <p class="section-subtitle">Data problems look technical, but they start with people. We sit between your teams, figure out what's wrong, and make it right.</p>
-      </div>
-
-      <!-- Phase 1: Align -->
-      <div class="value-prop-item fade-in">
-        <div class="value-prop-text">
-          <div class="value-prop-number">01</div>
-          <h3>Your Teams Finally Agree on the Numbers</h3>
-          <p>Sales says 200 leads. Marketing says 340. Finance says neither number makes sense. The problem is upstream of your CRM. Nobody agreed on what a "lead" means. We sit down with every team, map the disagreements, and create shared definitions that everyone trusts. Before we touch a single record.</p>
-        </div>
-        <div class="value-prop-visual">
-          <div style="width:100%;">
-            <!-- Before: disagreement -->
-            <div style="background:rgba(231,76,60,0.04); border:1px solid rgba(231,76,60,0.12); border-radius:12px; padding:1.2rem; margin-bottom:0.8rem;">
-              <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.1em; color:#e74c3c; margin-bottom:0.8rem; font-weight:600;">Before</div>
-              <div style="font-size:0.85rem; line-height:2; color:var(--navy);">
-                <div><strong>Sales:</strong> "We have 200 qualified leads"</div>
-                <div><strong>Marketing:</strong> "We generated 340 MQLs"</div>
-                <div><strong>Finance:</strong> "Pipeline shows $1.2M"</div>
-                <div style="color:#e74c3c; font-size:0.8rem; margin-top:0.3rem;">Three teams, three numbers, zero trust</div>
-              </div>
-            </div>
-            <!-- After: alignment -->
-            <div style="background:rgba(0,184,148,0.04); border:1px solid rgba(0,184,148,0.15); border-radius:12px; padding:1.2rem;">
-              <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.1em; color:#00b894; margin-bottom:0.8rem; font-weight:600;">After</div>
-              <div style="font-size:0.85rem; line-height:1.8; color:var(--navy);">
-                <div><span style="color:#00b894;">✓</span> <strong>Shared definition:</strong> 247 qualified leads</div>
-                <div style="color:var(--text-muted); font-size:0.78rem; margin-top:0.3rem;">One number. Every team trusts it. Dashboards match.</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Phase 2: Fix -->
-      <div class="value-prop-item reverse fade-in">
-        <div class="value-prop-text">
-          <div class="value-prop-number">02</div>
-          <h3>Your Dashboards Tell the Truth</h3>
-          <p>You've got dashboards. Nobody trusts them. The data is stale, the metrics don't match, and half the reports were built by someone who left two years ago. We rebuild your reporting from the ground up: clean the data underneath, connect the right sources, and build dashboards that answer real business questions.</p>
-        </div>
-        <div class="value-prop-visual">
-          <div style="width:100%; position:relative;">
-            <!-- Scattered sources -->
-            <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:0.6rem; margin-bottom:1.2rem;">
-              <div style="background:#fff; border:1px solid rgba(26,26,46,0.08); border-radius:10px; padding:0.8rem; text-align:center; font-size:0.78rem; color:var(--navy); font-weight:500;">CRM</div>
-              <div style="background:#fff; border:1px solid rgba(26,26,46,0.08); border-radius:10px; padding:0.8rem; text-align:center; font-size:0.78rem; color:var(--navy); font-weight:500;">Product DB</div>
-              <div style="background:#fff; border:1px solid rgba(26,26,46,0.08); border-radius:10px; padding:0.8rem; text-align:center; font-size:0.78rem; color:var(--navy); font-weight:500;">Analytics</div>
-              <div style="background:#fff; border:1px solid rgba(26,26,46,0.08); border-radius:10px; padding:0.8rem; text-align:center; font-size:0.78rem; color:var(--navy); font-weight:500;">Ad Platforms</div>
-              <div style="background:#fff; border:1px solid rgba(26,26,46,0.08); border-radius:10px; padding:0.8rem; text-align:center; font-size:0.78rem; color:var(--navy); font-weight:500;">Billing</div>
-              <div style="background:#fff; border:1px solid rgba(26,26,46,0.08); border-radius:10px; padding:0.8rem; text-align:center; font-size:0.78rem; color:var(--text-muted); font-weight:500;">+ more</div>
-            </div>
-            <!-- Convergence lines -->
-            <div style="text-align:center; margin-bottom:1.2rem;">
-              <svg width="200" height="32" viewBox="0 0 200 32" fill="none" style="display:inline-block;">
-                <path d="M20 0 L100 28" stroke="var(--navy)" stroke-width="1" opacity="0.15"/>
-                <path d="M60 0 L100 28" stroke="var(--navy)" stroke-width="1" opacity="0.15"/>
-                <path d="M100 0 L100 28" stroke="var(--navy)" stroke-width="1.5" opacity="0.25"/>
-                <path d="M140 0 L100 28" stroke="var(--navy)" stroke-width="1" opacity="0.15"/>
-                <path d="M180 0 L100 28" stroke="var(--navy)" stroke-width="1" opacity="0.15"/>
-              </svg>
-            </div>
-            <!-- Unified result -->
-            <div style="background:var(--navy); color:#fff; border-radius:12px; padding:1.2rem 1.5rem; text-align:center;">
-              <div style="font-weight:700; font-size:1rem; margin-bottom:0.3rem;">One dashboard. Every source. Real answers.</div>
-              <div style="font-size:0.8rem; opacity:0.7;">Your CEO stops asking "which number is right?"</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Phase 3: AI-Ready -->
-      <div class="value-prop-item fade-in">
-        <div class="value-prop-text">
-          <div class="value-prop-number">03</div>
-          <h3>Your AI Initiatives Have a Foundation</h3>
-          <p>Most AI projects stall because the data underneath isn't ready. We get your data to the point where your AI tools, automations, and internal copilots work, because the data is clean, documented, and reliable. Then we stick around to make sure it stays that way.</p>
-        </div>
-        <div class="value-prop-visual">
-          <div style="width:100%;">
-            <!-- The shift -->
-            <div style="display:flex; gap:1rem; align-items:stretch; margin-bottom:1.2rem;">
-              <div style="flex:1; background:rgba(26,26,46,0.03); border:1px solid rgba(26,26,46,0.08); border-radius:12px; padding:1.2rem; display:flex; flex-direction:column; justify-content:center;">
-                <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-muted); margin-bottom:0.6rem; font-weight:600;">Without us</div>
-                <div style="font-size:0.82rem; color:var(--text-secondary); line-height:1.6;">AI hallucinates on bad data<br/>Automations fire wrong<br/>Nobody trusts the outputs<br/>Months wasted on rework</div>
-              </div>
-              <div style="display:flex; align-items:center; font-size:1.5rem; color:var(--accent); font-weight:700;">→</div>
-              <div style="flex:1; background:var(--navy); border-radius:12px; padding:1.2rem; display:flex; flex-direction:column; justify-content:center;">
-                <div style="font-size:0.65rem; text-transform:uppercase; letter-spacing:0.1em; color:rgba(255,255,255,0.5); margin-bottom:0.6rem; font-weight:600;">With Datahooks</div>
-                <div style="font-size:0.82rem; color:rgba(255,255,255,0.85); line-height:1.6;">Clean, documented data<br/>Automations that work<br/>AI you can actually trust<br/>A partner keeping it right</div>
-              </div>
-            </div>
-            <!-- Punchline -->
-            <div style="text-align:center; padding:0.8rem; font-size:0.85rem; color:var(--text-muted);">We don't walk away after setup. We stay on and make sure it keeps working as your business evolves.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== DATA SOURCES WE WORK WITH ===== -->
-  <section id="integrations">
+  <!-- ===== DATA SOURCES ===== -->
+  <section class="hp-integrations fade-in" id="integrations">
     <div class="container">
       <div style="text-align:center; margin-bottom:3rem;">
-        <span class="section-label">Data Sources We Work With</span>
+        <span class="section-label">Data Sources</span>
         <h2>If you have it, we can hook into it</h2>
-        <p class="section-subtitle">CRMs, databases, analytics platforms, ad channels, payment systems, spreadsheets. We've seen it all and we know how to pull it together.</p>
       </div>
 
       <div class="integrations-grid">
@@ -220,12 +486,8 @@
         <div class="integration-item"><div class="integration-icon"><img src="https://cdn.prod.website-files.com/6130fa1501794e37c21867cf/6191a3b11a9912c7c4c63be1_613293e85e476629514bfdef_NetSuite.svg" alt="NetSuite" /></div> NetSuite</div>
         <div class="integration-item"><div class="integration-icon"><img src="https://uploads-ssl.webflow.com/6130fa1501794e37c21867cf/6191a36c65c3fd62bbae6e38_613294e19506d6310ebb0a81_Segment.svg" alt="Segment" /></div> Segment</div>
         <div class="integration-item"><div class="integration-icon" style="background:rgba(52,73,94,0.08);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" stroke="#34495e" stroke-width="2" stroke-linecap="round"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" stroke="#34495e" stroke-width="2" stroke-linecap="round"/></svg></div> REST APIs</div>
-        <div class="integration-item"><div class="integration-icon" style="background:rgba(33,115,70,0.08);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" fill="#217346"/><path d="M14 2v6h6" fill="#33a867"/><path d="M14 2L20 8H14V2Z" fill="#33a867"/><text x="10" y="17" font-family="Arial,sans-serif" font-size="8" font-weight="bold" fill="white" text-anchor="middle">X</text></svg></div> CSV / Excel / Parquet</div>
-        <div class="integration-item"><div class="integration-icon" style="background:rgba(26,26,46,0.06);"><svg width="22" height="24" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="11" cy="5" rx="9" ry="4" fill="none" stroke="#1a1a2e" stroke-width="1.5"/><path d="M2 5v7c0 2.2 4 4 9 4s9-1.8 9-4V5" stroke="#1a1a2e" stroke-width="1.5" fill="none"/><ellipse cx="11" cy="17" rx="9" ry="4" fill="none" stroke="#1a1a2e" stroke-width="1.5"/><path d="M2 17v4c0 2.2 4 4 9 4s9-1.8 9-4v-4" stroke="#1a1a2e" stroke-width="1.5" fill="none"/></svg></div> Your Proprietary DB</div>
-      </div>
-
-      <div style="text-align:center; margin-top:2.5rem;">
-        <a href="/solutions/" class="btn btn-ghost">See how we work <span class="arrow">→</span></a>
+        <div class="integration-item"><div class="integration-icon" style="background:rgba(33,115,70,0.08);"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6z" fill="#217346"/><path d="M14 2v6h6" fill="#33a867"/><path d="M14 2L20 8H14V2Z" fill="#33a867"/><text x="10" y="17" font-family="Arial,sans-serif" font-size="8" font-weight="bold" fill="white" text-anchor="middle">X</text></svg></div> CSV / Excel</div>
+        <div class="integration-item"><div class="integration-icon" style="background:rgba(26,26,46,0.06);"><svg width="22" height="24" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="11" cy="5" rx="9" ry="4" fill="none" stroke="#1a1a2e" stroke-width="1.5"/><path d="M2 5v7c0 2.2 4 4 9 4s9-1.8 9-4V5" stroke="#1a1a2e" stroke-width="1.5" fill="none"/><ellipse cx="11" cy="17" rx="9" ry="4" fill="none" stroke="#1a1a2e" stroke-width="1.5"/><path d="M2 17v4c0 2.2 4 4 9 4s9-1.8 9-4v-4" stroke="#1a1a2e" stroke-width="1.5" fill="none"/></svg></div> Your Database</div>
       </div>
     </div>
   </section>
@@ -234,8 +496,8 @@
   <section class="cta-banner">
     <div class="container">
       <div class="cta-box">
-        <h2>Let's get your data <span class="gradient-text">ready for the future</span></h2>
-        <p>We'll hop on a call, look at what you're working with, and tell you exactly what we'd do. No pitch deck, no pressure.</p>
+        <h2>See what your CRM is <span class="gradient-text">really worth</span></h2>
+        <p>We start with a free 45-minute audit call. No deck, no pitch. Just an honest look at your instance and what it would take to get it right.</p>
         <a href="/contact/" class="btn btn-primary">Start a Conversation <span>→</span></a>
       </div>
     </div>
@@ -249,14 +511,14 @@
           <a href="/" class="logo">
             <span class="logo-icon"><img src="assets/logo-d-white.png" alt="Datahooks" /></span> Datahooks
           </a>
-          <p>We align your teams, fix your data, and make sure your dashboards, automations, and AI actually work.</p>
+          <p>We fix your data, build trusted dashboards, and get your business AI-ready.</p>
         </div>
         <div>
           <h4>Services</h4>
           <ul class="footer-links">
             <li><a href="/solutions/">What We Do</a></li>
-            <li><a href="/solutions/#integrations">Data Sources</a></li>
-            <li><a href="/solutions/#process">Our Process</a></li>
+            <li><a href="/#integrations">Data Sources</a></li>
+            <li><a href="/whitepaper/">Whitepaper</a></li>
           </ul>
         </div>
         <div>
@@ -291,6 +553,26 @@
       });
     }, { threshold: 0.1 });
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    function fmt(n) {
+      if (n >= 1000000) return '$' + (n/1000000).toFixed(1) + 'M';
+      if (n >= 1000) return '$' + Math.round(n/1000) + 'K';
+      return '$' + Math.round(n);
+    }
+    function calcLeak() {
+      var team = parseInt(document.getElementById('team-size').value);
+      var deal = parseInt(document.getElementById('deal-val').value);
+      var deals = parseInt(document.getElementById('deals-rep').value);
+      document.getElementById('team-size-val').textContent = team + ' reps';
+      document.getElementById('deal-val-val').textContent = '$' + deal.toLocaleString();
+      document.getElementById('deals-rep-val').textContent = deals + ' deals';
+      var total = team * deal * deals;
+      var leak = Math.round(total * 0.12);
+      var recover = Math.round(leak * 0.75);
+      document.getElementById('leak-val').textContent = fmt(leak);
+      document.getElementById('recover-val').textContent = fmt(recover);
+    }
+    calcLeak();
   </script>
 
 </body>
